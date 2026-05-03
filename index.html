@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Clocaire Women — The Fitted White Shirt. One perfect garment, crafted for the infinite woman.">
+<meta name="keywords" content="clocaire, women, fitted white shirt, luxury shirt, designer shirt, white shirt">
+<meta property="og:title" content="Clocaire Women — The Fitted White Shirt">
+<meta property="og:description" content="One perfect garment, crafted for the infinite woman.">
+<meta property="og:type" content="website">
+<title>Clocaire Women — The Fitted White Shirt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Didact+Gothic&family=Tenor+Sans&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #111009;
+  --parchment: #faf7f2;
+  --paper: #f2ede4;
+  --bone: #e8e0d2;
+  --dust: #d4c9b8;
+  --rose: #c4a882;
+  --rose-deep: #a8886a;
+  --gray: #8c8278;
+  --gray-light: #c8bfb2;
+  --white: #ffffff;
+  --serif: 'Playfair Display', 'Georgia', serif;
+  --sans: 'Tenor Sans', sans-serif;
+  --mono: 'Didact Gothic', sans-serif;
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --t: 0.45s;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { font-size:16px; scroll-behavior:smooth; }
+body { font-family:var(--sans); background:var(--parchment); color:var(--ink); overflow-x:hidden; cursor:none; }
+
+/* ─── CURSOR ─── */
+#cur { position:fixed; width:8px; height:8px; background:var(--ink); border-radius:50%; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); transition:width .25s,height .25s,background .25s; }
+#cur-ring { position:fixed; width:32px; height:32px; border:1px solid rgba(17,16,9,.35); border-radius:50%; pointer-events:none; z-index:9998; transform:translate(-50%,-50%); transition:width .3s,height .3s,border-color .3s; }
+#cur.h { width:5px; height:5px; background:var(--rose); }
+#cur-ring.h { width:44px; height:44px; border-color:var(--rose); }
+
+/* ─── ANNOUNCEMENT ─── */
+.ann { background:var(--ink); color:var(--parchment); font-family:var(--mono); font-size:.65rem; letter-spacing:.22em; text-transform:uppercase; text-align:center; padding:11px 20px; }
+.ann a { color:var(--rose); text-decoration:none; }
+
+/* ─── NAV ─── */
+nav { position:sticky; top:0; z-index:900; height:68px; background:rgba(250,247,242,.95); backdrop-filter:blur(24px); border-bottom:1px solid rgba(17,16,9,.08); display:flex; align-items:center; padding:0 48px; transition:box-shadow .4s; }
+nav.scrolled { box-shadow:0 2px 32px rgba(17,16,9,.07); }
+.nav-grid { width:100%; max-width:1440px; margin:0 auto; display:grid; grid-template-columns:1fr auto 1fr; align-items:center; }
+.nav-left { display:flex; gap:36px; }
+.nav-link { font-family:var(--mono); font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink); text-decoration:none; opacity:.65; transition:opacity var(--t); cursor:none; }
+.nav-link:hover { opacity:1; color:var(--rose-deep); }
+.nav-center { display:flex; flex-direction:column; align-items:center; gap:3px; text-decoration:none; cursor:none; }
+.nav-logo-mark svg { height:30px; width:auto; }
+.nav-wordmark { font-family:var(--serif); font-size:1.1rem; font-weight:300; letter-spacing:.45em; text-transform:uppercase; color:var(--ink); white-space:nowrap; }
+.nav-sub { font-family:var(--mono); font-size:.52rem; letter-spacing:.3em; text-transform:uppercase; color:var(--rose); margin-top:-1px; }
+.nav-right { display:flex; gap:18px; align-items:center; justify-content:flex-end; }
+.nav-btn { background:none; border:none; color:var(--ink); cursor:none; padding:6px; transition:color var(--t); position:relative; display:flex; align-items:center; }
+.nav-btn:hover { color:var(--rose-deep); }
+.cart-badge { position:absolute; top:2px; right:2px; width:14px; height:14px; background:var(--ink); color:var(--parchment); border-radius:50%; font-size:.55rem; display:flex; align-items:center; justify-content:center; font-family:var(--mono); transition:background var(--t); }
+.nav-btn:hover .cart-badge { background:var(--rose-deep); }
+.hamburger { display:none; flex-direction:column; gap:4px; background:none; border:none; cursor:none; padding:6px; }
+.hamburger span { display:block; width:20px; height:1px; background:var(--ink); transition:var(--t); }
+
+/* ─── HERO ─── */
+.hero { display:grid; grid-template-columns:55% 45%; min-height:calc(100vh - 68px - 40px); position:relative; overflow:hidden; }
+.hero-left { background:var(--paper); position:relative; display:flex; flex-direction:column; justify-content:flex-end; padding:80px 72px; overflow:hidden; }
+.hero-left::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 80% 20%, rgba(196,168,130,.12) 0%, transparent 65%); pointer-events:none; }
+.hero-bg-text { position:absolute; top:50%; left:50%; transform:translate(-55%,-50%); font-family:var(--serif); font-size:clamp(10rem,18vw,22rem); font-weight:300; font-style:italic; color:rgba(17,16,9,.03); pointer-events:none; white-space:nowrap; line-height:1; letter-spacing:-.02em; }
+.hero-shirt-vis { position:absolute; top:50%; left:50%; transform:translate(-50%,-52%); width:min(340px, 55%); }
+.shirt-svg-wrap { width:100%; filter:drop-shadow(0 40px 80px rgba(17,16,9,.12)); }
+
+.hero-content { position:relative; z-index:2; }
+.hero-tag { font-family:var(--mono); font-size:.62rem; letter-spacing:.3em; text-transform:uppercase; color:var(--rose); margin-bottom:20px; display:flex; align-items:center; gap:12px; }
+.hero-tag::before { content:''; display:block; width:28px; height:1px; background:var(--rose); }
+.hero-h1 { font-family:var(--serif); font-size:clamp(2.8rem,5.5vw,5rem); font-weight:300; line-height:1.06; letter-spacing:-.01em; margin-bottom:24px; }
+.hero-h1 em { font-style:italic; }
+.hero-desc { font-family:var(--sans); font-size:.92rem; line-height:1.85; color:var(--gray); max-width:380px; margin-bottom:44px; font-weight:400; }
+.hero-ctas { display:flex; gap:14px; flex-wrap:wrap; }
+
+/* BUTTONS */
+.btn-dark { display:inline-block; padding:15px 40px; background:var(--ink); color:var(--parchment); font-family:var(--mono); font-size:.65rem; letter-spacing:.22em; text-transform:uppercase; text-decoration:none; border:1px solid var(--ink); transition:background var(--t),color var(--t); cursor:none; }
+.btn-dark:hover { background:var(--rose-deep); border-color:var(--rose-deep); }
+.btn-ghost { display:inline-block; padding:15px 40px; background:transparent; color:var(--ink); font-family:var(--mono); font-size:.65rem; letter-spacing:.22em; text-transform:uppercase; text-decoration:none; border:1px solid rgba(17,16,9,.25); transition:all var(--t); cursor:none; }
+.btn-ghost:hover { border-color:var(--ink); background:var(--ink); color:var(--parchment); }
+.btn-rose { display:inline-block; padding:15px 40px; background:var(--rose); color:var(--white); font-family:var(--mono); font-size:.65rem; letter-spacing:.22em; text-transform:uppercase; text-decoration:none; border:1px solid var(--rose); transition:background var(--t); cursor:none; }
+.btn-rose:hover { background:var(--rose-deep); border-color:var(--rose-deep); }
+
+.hero-right { background:var(--ink); position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.hero-right-inner { text-align:center; position:relative; z-index:2; padding:60px 40px; }
+.hero-right::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 40% 60%, rgba(196,168,130,.1) 0%, transparent 60%); }
+.hero-logo-large { margin:0 auto 32px; opacity:.08; }
+.hero-logo-large svg { height:120px; width:auto; }
+.hero-price-wrap { display:inline-block; border:1px solid rgba(250,247,242,.12); padding:32px 48px; margin-bottom:32px; position:relative; }
+.hero-price-wrap::before { content:'The Fitted White Shirt'; position:absolute; top:-9px; left:50%; transform:translateX(-50%); background:var(--ink); padding:0 16px; font-family:var(--mono); font-size:.58rem; letter-spacing:.25em; text-transform:uppercase; color:var(--rose); white-space:nowrap; }
+.hero-price { font-family:var(--serif); font-size:3.2rem; font-weight:300; color:var(--parchment); line-height:1; }
+.hero-price-note { font-family:var(--mono); font-size:.6rem; letter-spacing:.18em; color:rgba(250,247,242,.4); text-transform:uppercase; margin-top:8px; }
+.hero-quick-buy { width:100%; max-width:280px; }
+.hero-scroll-line { position:absolute; bottom:32px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:8px; }
+.hero-scroll-line span { font-family:var(--mono); font-size:.55rem; letter-spacing:.25em; text-transform:uppercase; color:rgba(250,247,242,.3); }
+.hero-scroll-line::after { content:''; display:block; width:1px; height:36px; background:linear-gradient(to bottom,rgba(250,247,242,.3),transparent); animation:scrollpulse 2s ease-in-out infinite; }
+@keyframes scrollpulse { 0%,100%{opacity:.3;} 50%{opacity:.8;} }
+
+/* ─── MARQUEE ─── */
+.marquee-bar { background:var(--rose); overflow:hidden; padding:13px 0; }
+.marquee-track { display:flex; white-space:nowrap; animation:scrollx 22s linear infinite; }
+.marquee-item { display:flex; align-items:center; gap:32px; padding:0 32px; font-family:var(--serif); font-size:1rem; font-style:italic; font-weight:300; color:rgba(255,255,255,.75); }
+.marquee-sep { width:4px; height:4px; border-radius:50%; background:rgba(255,255,255,.5); }
+@keyframes scrollx { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+
+/* ─── PRODUCT SECTION ─── */
+section { padding:110px 48px; }
+.section-max { max-width:1440px; margin:0 auto; }
+.label { font-family:var(--mono); font-size:.62rem; letter-spacing:.28em; text-transform:uppercase; color:var(--rose); margin-bottom:12px; }
+.h2 { font-family:var(--serif); font-size:clamp(2rem,4vw,3.4rem); font-weight:300; line-height:1.12; }
+.h2 em { font-style:italic; }
+
+/* ─── PRODUCT DETAIL ─── */
+.product-layout { display:grid; grid-template-columns:1fr 1fr; gap:0; min-height:80vh; }
+.product-gallery { background:var(--paper); position:relative; overflow:hidden; }
+.gallery-main { height:100%; min-height:600px; display:flex; align-items:center; justify-content:center; position:relative; padding:60px; }
+.gallery-main::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 50% 30%, rgba(196,168,130,.09) 0%, transparent 60%); }
+.gallery-watermark { position:absolute; bottom:28px; right:28px; opacity:.06; }
+.gallery-watermark svg { height:56px; }
+.shirt-main-vis { width:min(280px,60%); position:relative; z-index:1; }
+.shirt-main-vis svg { width:100%; filter:drop-shadow(0 30px 60px rgba(17,16,9,.15)); }
+.gallery-thumbnails { position:absolute; left:24px; top:50%; transform:translateY(-50%); display:flex; flex-direction:column; gap:10px; }
+.thumb { width:60px; height:72px; border:1px solid var(--bone); background:var(--parchment); cursor:none; display:flex; align-items:center; justify-content:center; transition:border-color var(--t); overflow:hidden; }
+.thumb.active { border-color:var(--ink); }
+.thumb:hover { border-color:var(--rose); }
+.thumb-inner { width:90%; height:90%; display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-size:.7rem; font-style:italic; color:var(--gray-light); }
+.gallery-view-label { position:absolute; bottom:28px; left:28px; font-family:var(--mono); font-size:.58rem; letter-spacing:.2em; text-transform:uppercase; color:var(--rose); }
+
+.product-info-panel { background:var(--parchment); padding:72px 64px; display:flex; flex-direction:column; justify-content:center; border-left:1px solid rgba(17,16,9,.06); }
+.prod-eyebrow { font-family:var(--mono); font-size:.62rem; letter-spacing:.25em; text-transform:uppercase; color:var(--rose); margin-bottom:16px; display:flex; align-items:center; gap:10px; }
+.prod-eyebrow::before { content:''; display:block; width:20px; height:1px; background:var(--rose); }
+.prod-title { font-family:var(--serif); font-size:clamp(2rem,3.5vw,3rem); font-weight:300; line-height:1.1; margin-bottom:10px; }
+.prod-title em { font-style:italic; }
+.prod-subtitle { font-family:var(--sans); font-size:.85rem; color:var(--gray); letter-spacing:.04em; margin-bottom:28px; }
+.prod-price-row { display:flex; align-items:baseline; gap:16px; margin-bottom:32px; padding-bottom:32px; border-bottom:1px solid rgba(17,16,9,.08); }
+.prod-price { font-family:var(--serif); font-size:2rem; font-weight:400; color:var(--ink); }
+.prod-price-note { font-family:var(--mono); font-size:.6rem; letter-spacing:.15em; text-transform:uppercase; color:var(--gray); }
+.stars { display:flex; align-items:center; gap:8px; margin-bottom:28px; }
+.star-row { color:var(--rose); font-size:.8rem; letter-spacing:.08em; }
+.star-count { font-family:var(--mono); font-size:.65rem; color:var(--gray); letter-spacing:.08em; }
+.star-sep { width:3px; height:3px; border-radius:50%; background:var(--dust); }
+.star-link { font-family:var(--mono); font-size:.65rem; color:var(--gray); cursor:none; text-decoration:underline; text-underline-offset:3px; }
+
+/* SIZE SELECTOR */
+.field-label { font-family:var(--mono); font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink); margin-bottom:12px; display:flex; justify-content:space-between; align-items:center; }
+.size-link { color:var(--rose); cursor:none; text-decoration:underline; text-underline-offset:3px; }
+.size-grid { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:28px; }
+.size-btn { min-width:52px; height:52px; border:1px solid rgba(17,16,9,.2); background:none; font-family:var(--mono); font-size:.72rem; letter-spacing:.08em; cursor:none; transition:all var(--t); padding:0 12px; color:var(--ink); }
+.size-btn:hover { border-color:var(--ink); background:rgba(17,16,9,.04); }
+.size-btn.active { background:var(--ink); color:var(--parchment); border-color:var(--ink); }
+.size-btn.sold-out { opacity:.35; text-decoration:line-through; cursor:default; }
+
+/* FIT SELECTOR */
+.fit-grid { display:flex; gap:8px; margin-bottom:32px; }
+.fit-btn { flex:1; padding:12px 8px; border:1px solid rgba(17,16,9,.2); background:none; font-family:var(--mono); font-size:.6rem; letter-spacing:.12em; text-transform:uppercase; cursor:none; transition:all var(--t); color:var(--ink); text-align:center; line-height:1.4; }
+.fit-btn:hover { border-color:var(--ink); }
+.fit-btn.active { background:var(--ink); color:var(--parchment); border-color:var(--ink); }
+.fit-sub { display:block; font-size:.52rem; opacity:.6; margin-top:2px; letter-spacing:.08em; }
+
+/* ADD TO CART */
+.add-row { display:flex; gap:10px; margin-bottom:24px; }
+.qty-wrap { display:flex; align-items:center; border:1px solid rgba(17,16,9,.2); height:54px; }
+.qty-btn { width:42px; height:100%; border:none; background:none; font-size:1.1rem; cursor:none; color:var(--ink); transition:background var(--t); display:flex; align-items:center; justify-content:center; }
+.qty-btn:hover { background:rgba(17,16,9,.06); }
+.qty-num { width:40px; text-align:center; font-family:var(--mono); font-size:.85rem; }
+.btn-add { flex:1; height:54px; background:var(--ink); color:var(--parchment); border:1px solid var(--ink); font-family:var(--mono); font-size:.68rem; letter-spacing:.22em; text-transform:uppercase; cursor:none; transition:background var(--t); }
+.btn-add:hover { background:var(--rose-deep); border-color:var(--rose-deep); }
+.btn-wish { width:54px; height:54px; border:1px solid rgba(17,16,9,.2); background:none; cursor:none; font-size:1.1rem; display:flex; align-items:center; justify-content:center; transition:all var(--t); color:var(--ink); }
+.btn-wish:hover { border-color:var(--rose); background:rgba(196,168,130,.08); }
+.btn-wish.active { background:rgba(196,168,130,.15); border-color:var(--rose); color:var(--rose-deep); }
+
+.buy-now { display:block; width:100%; height:54px; background:var(--rose); color:var(--white); border:1px solid var(--rose); font-family:var(--mono); font-size:.68rem; letter-spacing:.22em; text-transform:uppercase; cursor:none; transition:background var(--t); margin-bottom:28px; }
+.buy-now:hover { background:var(--rose-deep); border-color:var(--rose-deep); }
+
+.prod-trust { display:flex; gap:20px; flex-wrap:wrap; padding-top:24px; border-top:1px solid rgba(17,16,9,.08); margin-bottom:28px; }
+.trust-item { display:flex; align-items:center; gap:7px; font-family:var(--mono); font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gray); }
+.trust-item svg { flex-shrink:0; }
+.prod-share { display:flex; gap:14px; align-items:center; }
+.share-label { font-family:var(--mono); font-size:.6rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gray); }
+.share-btn { width:32px; height:32px; border:1px solid rgba(17,16,9,.15); display:flex; align-items:center; justify-content:center; cursor:none; color:var(--gray); font-size:.75rem; text-decoration:none; transition:all var(--t); }
+.share-btn:hover { border-color:var(--ink); color:var(--ink); }
+
+/* ─── ACCORDION DETAILS ─── */
+.accordion { border-top:1px solid rgba(17,16,9,.1); }
+.accordion-item { border-bottom:1px solid rgba(17,16,9,.1); }
+.accordion-trigger { width:100%; padding:20px 0; display:flex; justify-content:space-between; align-items:center; background:none; border:none; cursor:none; font-family:var(--mono); font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; color:var(--ink); transition:color var(--t); }
+.accordion-trigger:hover { color:var(--rose-deep); }
+.acc-icon { font-size:.9rem; transition:transform var(--t); }
+.accordion-item.open .acc-icon { transform:rotate(45deg); }
+.accordion-body { max-height:0; overflow:hidden; transition:max-height .5s var(--ease); }
+.accordion-body.open { max-height:400px; }
+.accordion-body p, .accordion-body li { font-family:var(--sans); font-size:.84rem; line-height:1.8; color:var(--gray); }
+.accordion-body ul { padding-left:18px; }
+.accordion-body ul li { margin-bottom:6px; }
+.accordion-body-inner { padding:0 0 20px; }
+
+/* ─── FABRIC / STORY ─── */
+.fabric-section { background:var(--ink); padding:110px 48px; }
+.fabric-inner { max-width:1440px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:100px; align-items:center; }
+.fabric-vis { position:relative; }
+.fabric-box { height:520px; background:linear-gradient(135deg, #1c1b16 0%, #151410 100%); position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; }
+.fabric-box::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 60% 40%, rgba(196,168,130,.12) 0%, transparent 55%); }
+.fabric-logo-ghost { opacity:.06; position:absolute; }
+.fabric-logo-ghost svg { height:180px; }
+.fabric-shirt-ghost { position:relative; z-index:1; }
+.fabric-shirt-ghost svg { height:260px; opacity:.18; filter:brightness(2); }
+.fabric-tag { position:absolute; bottom:32px; left:32px; font-family:var(--mono); font-size:.58rem; letter-spacing:.22em; text-transform:uppercase; color:var(--rose); }
+.fabric-tag-num { font-family:var(--serif); font-size:2rem; font-weight:300; color:rgba(250,247,242,.15); display:block; line-height:1; }
+.fabric-content { color:var(--parchment); }
+.fabric-eyebrow { font-family:var(--mono); font-size:.62rem; letter-spacing:.3em; text-transform:uppercase; color:var(--rose); margin-bottom:20px; display:flex; align-items:center; gap:12px; }
+.fabric-eyebrow::before { content:''; display:block; width:24px; height:1px; background:var(--rose); }
+.fabric-title { font-family:var(--serif); font-size:clamp(2rem,4vw,3.2rem); font-weight:300; line-height:1.1; margin-bottom:24px; }
+.fabric-title em { font-style:italic; }
+.fabric-text { font-family:var(--sans); font-size:.9rem; line-height:1.85; color:rgba(250,247,242,.55); margin-bottom:40px; }
+.fabric-specs { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:48px; }
+.spec-item { border-top:1px solid rgba(250,247,242,.1); padding-top:16px; }
+.spec-label { font-family:var(--mono); font-size:.58rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(250,247,242,.35); margin-bottom:4px; }
+.spec-val { font-family:var(--sans); font-size:.85rem; color:rgba(250,247,242,.8); }
+
+/* ─── SIZE GUIDE ─── */
+.size-guide-section { background:var(--paper); padding:110px 48px; }
+.size-table-wrap { overflow-x:auto; margin-top:56px; }
+table { width:100%; border-collapse:collapse; min-width:520px; }
+th { font-family:var(--mono); font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; padding:14px 20px; background:var(--ink); color:var(--parchment); text-align:left; font-weight:400; }
+td { font-family:var(--sans); font-size:.85rem; padding:14px 20px; color:var(--ink); border-bottom:1px solid rgba(17,16,9,.07); }
+tr:hover td { background:rgba(17,16,9,.025); }
+.size-note { font-family:var(--sans); font-size:.8rem; color:var(--gray); margin-top:20px; line-height:1.7; }
+
+/* ─── STYLING / HOW TO WEAR ─── */
+.styling-section { padding:110px 48px; }
+.styling-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:60px; }
+.style-card { position:relative; overflow:hidden; cursor:none; }
+.style-img { aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; position:relative; }
+.s1 .style-img { background:linear-gradient(160deg,#e8e4dc 0%,#ddd5c8 100%); }
+.s2 .style-img { background:linear-gradient(160deg,#1c1b16 0%,#141310 100%); }
+.s3 .style-img { background:linear-gradient(160deg,#d8d0c4 0%,#ccc4b4 100%); }
+.style-shirt-icon { font-family:var(--serif); font-style:italic; font-size:3rem; opacity:.18; }
+.s2 .style-shirt-icon { color:var(--parchment); opacity:.15; }
+.style-label { padding:20px; background:var(--parchment); }
+.style-look { font-family:var(--mono); font-size:.58rem; letter-spacing:.2em; text-transform:uppercase; color:var(--rose); margin-bottom:4px; }
+.style-name { font-family:var(--serif); font-size:1.15rem; font-weight:400; }
+.style-desc { font-family:var(--sans); font-size:.78rem; color:var(--gray); margin-top:4px; line-height:1.6; }
+.style-overlay { position:absolute; inset:0; background:rgba(17,16,9,0); transition:background .5s; display:flex; align-items:center; justify-content:center; }
+.style-card:hover .style-overlay { background:rgba(17,16,9,.35); }
+.style-cta { opacity:0; transition:opacity .4s; font-family:var(--mono); font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:var(--parchment); border:1px solid rgba(250,247,242,.5); padding:12px 24px; }
+.style-card:hover .style-cta { opacity:1; }
+
+/* ─── REVIEWS ─── */
+.reviews-section { background:var(--bone); padding:110px 48px; }
+.reviews-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:60px; flex-wrap:wrap; gap:24px; }
+.reviews-score { text-align:center; padding:40px 60px; background:var(--parchment); flex-shrink:0; }
+.score-num { font-family:var(--serif); font-size:4rem; font-weight:300; line-height:1; }
+.score-stars { color:var(--rose); font-size:.9rem; letter-spacing:.1em; margin:8px 0; }
+.score-total { font-family:var(--mono); font-size:.6rem; letter-spacing:.15em; text-transform:uppercase; color:var(--gray); }
+.reviews-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.review-card { background:var(--parchment); padding:32px; }
+.review-stars { color:var(--rose); font-size:.75rem; margin-bottom:14px; }
+.review-text { font-family:var(--serif); font-style:italic; font-size:1rem; font-weight:300; line-height:1.7; color:var(--ink); margin-bottom:20px; }
+.review-author { font-family:var(--mono); font-size:.62rem; letter-spacing:.15em; text-transform:uppercase; color:var(--gray); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
+.review-verified { color:var(--rose); font-size:.55rem; letter-spacing:.12em; }
+.review-date { opacity:.5; }
+
+/* ─── SHIPPING / DELIVERY ─── */
+.delivery-section { padding:110px 48px; }
+.delivery-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(17,16,9,.08); border:1px solid rgba(17,16,9,.08); margin-top:60px; }
+.delivery-item { background:var(--parchment); padding:44px 32px; }
+.delivery-item:hover { background:var(--paper); }
+.d-icon { font-size:1.5rem; margin-bottom:20px; display:block; color:var(--rose); }
+.d-title { font-family:var(--serif); font-size:1.1rem; font-weight:400; margin-bottom:8px; }
+.d-text { font-family:var(--sans); font-size:.8rem; color:var(--gray); line-height:1.7; }
+.delivery-countries { margin-top:56px; padding:36px; background:var(--paper); border-left:3px solid var(--rose); }
+.delivery-countries p { font-family:var(--sans); font-size:.85rem; color:var(--gray); line-height:1.8; }
+.delivery-countries strong { color:var(--ink); font-weight:400; }
+
+/* ─── PAYMENT / SECURITY ─── */
+.payment-section { background:var(--ink); padding:80px 48px; }
+.payment-inner { max-width:1440px; margin:0 auto; display:flex; flex-wrap:wrap; gap:48px; align-items:center; justify-content:space-between; }
+.payment-left h3 { font-family:var(--serif); font-size:1.8rem; font-weight:300; color:var(--parchment); margin-bottom:8px; }
+.payment-left h3 em { font-style:italic; }
+.payment-left p { font-family:var(--sans); font-size:.84rem; color:rgba(250,247,242,.45); max-width:400px; line-height:1.7; }
+.payment-logos { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+.pay-badge { padding:10px 18px; border:1px solid rgba(250,247,242,.12); font-family:var(--mono); font-size:.62rem; letter-spacing:.1em; color:rgba(250,247,242,.5); background:rgba(250,247,242,.04); }
+.pay-badge.highlight { border-color:rgba(196,168,130,.3); color:var(--rose); background:rgba(196,168,130,.06); }
+.security-badges { display:flex; flex-wrap:wrap; gap:16px; margin-top:20px; }
+.sec-badge { display:flex; align-items:center; gap:6px; font-family:var(--mono); font-size:.58rem; letter-spacing:.12em; text-transform:uppercase; color:rgba(250,247,242,.35); }
+.sec-dot { width:6px; height:6px; border-radius:50%; background:var(--rose); }
+
+/* ─── NEWSLETTER ─── */
+.newsletter-section { padding:110px 48px; display:flex; align-items:center; justify-content:center; text-align:center; position:relative; overflow:hidden; }
+.newsletter-section::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 50% 50%, rgba(196,168,130,.06) 0%, transparent 70%); }
+.newsletter-inner { max-width:560px; position:relative; z-index:1; }
+.nl-logo { margin:0 auto 28px; }
+.nl-logo svg { height:44px; opacity:.15; }
+.nl-title { font-family:var(--serif); font-size:clamp(2rem,4vw,3rem); font-weight:300; line-height:1.15; margin-bottom:16px; }
+.nl-title em { font-style:italic; }
+.nl-text { font-family:var(--sans); font-size:.88rem; color:var(--gray); line-height:1.8; margin-bottom:36px; }
+.nl-form { display:flex; gap:0; border:1px solid rgba(17,16,9,.18); }
+.nl-input { flex:1; padding:16px 20px; border:none; background:none; font-family:var(--sans); font-size:.85rem; color:var(--ink); outline:none; min-width:0; }
+.nl-input::placeholder { color:var(--gray-light); }
+.nl-btn { padding:16px 28px; background:var(--ink); color:var(--parchment); border:none; font-family:var(--mono); font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; cursor:none; transition:background var(--t); white-space:nowrap; }
+.nl-btn:hover { background:var(--rose-deep); }
+.nl-note { font-family:var(--mono); font-size:.58rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gray-light); margin-top:14px; }
+
+/* ─── CART DRAWER ─── */
+.overlay { position:fixed; inset:0; background:rgba(17,16,9,.5); backdrop-filter:blur(6px); z-index:1000; opacity:0; pointer-events:none; transition:opacity var(--t); }
+.overlay.open { opacity:1; pointer-events:all; }
+.cart-drawer { position:fixed; top:0; right:0; bottom:0; width:400px; background:var(--parchment); z-index:1001; transform:translateX(100%); transition:transform var(--t) var(--ease); display:flex; flex-direction:column; }
+.cart-drawer.open { transform:translateX(0); }
+.cdh { padding:28px 32px; border-bottom:1px solid rgba(17,16,9,.08); display:flex; justify-content:space-between; align-items:center; flex-shrink:0; }
+.cdh-title { font-family:var(--serif); font-size:1.4rem; font-weight:300; }
+.cdh-close { background:none; border:none; cursor:none; font-size:1rem; color:var(--gray); padding:6px; transition:color var(--t); }
+.cdh-close:hover { color:var(--ink); }
+.cd-body { flex:1; overflow-y:auto; padding:28px 32px; }
+.cd-empty { text-align:center; padding:60px 0; }
+.cd-empty p { font-family:var(--serif); font-size:1.4rem; font-style:italic; font-weight:300; color:var(--gray); margin-bottom:24px; }
+.cd-item { display:grid; grid-template-columns:72px 1fr; gap:16px; padding:20px 0; border-bottom:1px solid rgba(17,16,9,.07); }
+.cd-item-img { width:72px; height:90px; background:var(--paper); display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-style:italic; font-size:.7rem; color:var(--gray-light); }
+.cd-item-name { font-family:var(--serif); font-size:1rem; font-weight:400; margin-bottom:3px; }
+.cd-item-variant { font-family:var(--mono); font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gray); margin-bottom:12px; }
+.cd-qty-row { display:flex; align-items:center; justify-content:space-between; }
+.cd-qty { display:flex; align-items:center; gap:10px; border:1px solid rgba(17,16,9,.15); }
+.cdq-btn { width:30px; height:30px; border:none; background:none; cursor:none; display:flex; align-items:center; justify-content:center; font-size:.9rem; transition:background var(--t); }
+.cdq-btn:hover { background:rgba(17,16,9,.06); }
+.cdq-num { font-family:var(--mono); font-size:.8rem; min-width:20px; text-align:center; }
+.cd-price { font-family:var(--serif); font-size:1rem; }
+.cd-remove { font-family:var(--mono); font-size:.58rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gray); background:none; border:none; cursor:none; margin-top:8px; display:block; transition:color var(--t); }
+.cd-remove:hover { color:var(--ink); }
+.cd-footer { padding:24px 32px; border-top:1px solid rgba(17,16,9,.08); flex-shrink:0; }
+.cd-total { display:flex; justify-content:space-between; margin-bottom:20px; }
+.cd-total span { font-family:var(--serif); font-size:1.1rem; font-weight:400; }
+.cd-checkout { display:block; width:100%; padding:16px; background:var(--ink); color:var(--parchment); border:none; font-family:var(--mono); font-size:.68rem; letter-spacing:.22em; text-transform:uppercase; cursor:none; transition:background var(--t); text-align:center; margin-bottom:10px; }
+.cd-checkout:hover { background:var(--rose-deep); }
+.cd-secure { text-align:center; font-family:var(--mono); font-size:.58rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gray-light); display:flex; align-items:center; justify-content:center; gap:6px; }
+
+/* ─── SEARCH ─── */
+.search-over { position:fixed; inset:0; background:rgba(250,247,242,.97); backdrop-filter:blur(24px); z-index:1100; opacity:0; pointer-events:none; transition:opacity .35s; display:flex; align-items:flex-start; justify-content:center; padding-top:130px; }
+.search-over.open { opacity:1; pointer-events:all; }
+.search-box { width:100%; max-width:600px; padding:0 24px; }
+.search-over-close { position:absolute; top:28px; right:40px; background:none; border:none; cursor:none; font-size:1.2rem; color:var(--gray); padding:8px; transition:color var(--t); }
+.search-over-close:hover { color:var(--ink); }
+.search-field { width:100%; font-family:var(--serif); font-size:clamp(2rem,5vw,3.5rem); font-weight:300; border:none; border-bottom:1px solid rgba(17,16,9,.15); background:none; outline:none; padding:0 0 16px; color:var(--ink); caret-color:var(--rose); }
+.search-field::placeholder { color:var(--dust); }
+.search-hint { font-family:var(--mono); font-size:.6rem; letter-spacing:.22em; text-transform:uppercase; color:var(--rose); margin-bottom:14px; }
+
+/* ─── MOBILE NAV ─── */
+.mobile-nav { position:fixed; inset:0; background:var(--parchment); z-index:950; transform:translateX(-100%); transition:transform var(--t) var(--ease); padding:100px 40px 40px; display:flex; flex-direction:column; }
+.mobile-nav.open { transform:translateX(0); }
+.mobile-nav-close { position:absolute; top:24px; right:24px; background:none; border:none; cursor:none; font-size:1.3rem; color:var(--gray); padding:8px; }
+.mobile-links { list-style:none; }
+.mobile-links li { border-bottom:1px solid rgba(17,16,9,.07); }
+.mobile-links a { display:block; padding:18px 0; font-family:var(--serif); font-size:1.8rem; font-weight:300; color:var(--ink); text-decoration:none; transition:color var(--t); }
+.mobile-links a:hover { color:var(--rose-deep); }
+.mobile-logo { position:absolute; bottom:40px; left:40px; opacity:.1; }
+.mobile-logo svg { height:40px; }
+
+/* ─── FOOTER ─── */
+footer { background:var(--ink); color:var(--parchment); padding:80px 48px 40px; }
+.footer-grid { max-width:1440px; margin:0 auto; }
+.footer-top { display:grid; grid-template-columns:2fr 1fr 1fr 1.5fr; gap:60px; padding-bottom:56px; border-bottom:1px solid rgba(250,247,242,.07); margin-bottom:36px; }
+.ft-brand-logo { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
+.ft-brand-logo svg { height:26px; filter:invert(1); opacity:.7; }
+.ft-brand-name { font-family:var(--serif); font-size:1.4rem; font-weight:300; letter-spacing:.25em; text-transform:uppercase; }
+.ft-tagline { font-family:var(--sans); font-size:.82rem; color:rgba(250,247,242,.35); line-height:1.8; max-width:280px; margin-bottom:24px; }
+.ft-socials { display:flex; gap:10px; }
+.ft-social { width:34px; height:34px; border:1px solid rgba(250,247,242,.12); display:flex; align-items:center; justify-content:center; color:rgba(250,247,242,.4); font-size:.75rem; text-decoration:none; transition:all var(--t); cursor:none; }
+.ft-social:hover { border-color:var(--rose); color:var(--rose); }
+.ft-col-title { font-family:var(--mono); font-size:.62rem; letter-spacing:.25em; text-transform:uppercase; color:rgba(250,247,242,.5); margin-bottom:20px; }
+.ft-links { list-style:none; }
+.ft-links li { margin-bottom:9px; }
+.ft-links a { font-family:var(--sans); font-size:.82rem; color:rgba(250,247,242,.35); text-decoration:none; transition:color var(--t); }
+.ft-links a:hover { color:var(--rose); }
+.ft-contact-item { font-family:var(--sans); font-size:.82rem; color:rgba(250,247,242,.35); line-height:1.7; margin-bottom:10px; }
+.ft-contact-item strong { font-family:var(--mono); font-size:.58rem; letter-spacing:.15em; text-transform:uppercase; color:rgba(250,247,242,.5); display:block; font-weight:400; margin-bottom:2px; }
+.footer-bottom { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; }
+.ft-copy { font-family:var(--mono); font-size:.62rem; letter-spacing:.08em; color:rgba(250,247,242,.2); }
+.ft-legal { display:flex; gap:20px; }
+.ft-legal a { font-family:var(--mono); font-size:.6rem; letter-spacing:.08em; color:rgba(250,247,242,.2); text-decoration:none; transition:color var(--t); }
+.ft-legal a:hover { color:var(--rose); }
+.ft-pays { display:flex; gap:7px; }
+.ft-pay { padding:6px 12px; border:1px solid rgba(250,247,242,.08); font-family:var(--mono); font-size:.58rem; letter-spacing:.05em; color:rgba(250,247,242,.3); }
+
+/* ─── TOAST ─── */
+.toast { position:fixed; bottom:36px; left:50%; transform:translateX(-50%) translateY(12px); background:var(--ink); color:var(--parchment); padding:13px 28px; font-family:var(--mono); font-size:.68rem; letter-spacing:.14em; opacity:0; transition:all .4s var(--ease); z-index:9000; display:flex; align-items:center; gap:10px; }
+.toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+.toast-icon { color:var(--rose); }
+
+/* ─── SCROLL ANIMATIONS ─── */
+.reveal { opacity:0; transform:translateY(28px); transition:opacity .8s var(--ease), transform .8s var(--ease); }
+.reveal.in { opacity:1; transform:none; }
+.reveal-d1 { transition-delay:.08s; }
+.reveal-d2 { transition-delay:.16s; }
+.reveal-d3 { transition-delay:.24s; }
+.reveal-d4 { transition-delay:.32s; }
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1100px) {
+  .hero { grid-template-columns:1fr 1fr; }
+  .product-layout { grid-template-columns:1fr; }
+  .product-info-panel { padding:48px; }
+  .gallery-main { min-height:480px; }
+  .fabric-inner { grid-template-columns:1fr; gap:56px; }
+  .fabric-box { height:360px; }
+  .reviews-grid { grid-template-columns:1fr 1fr; }
+  .footer-top { grid-template-columns:1fr 1fr; gap:40px; }
+  .delivery-grid { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:800px) {
+  nav { padding:0 20px; }
+  .nav-left { display:none; }
+  .hamburger { display:flex; }
+  section, .fabric-section, .reviews-section, .delivery-section, .newsletter-section, .size-guide-section, .payment-section { padding:70px 20px; }
+  .hero { grid-template-columns:1fr; min-height:auto; }
+  .hero-left { padding:60px 24px 48px; min-height:70vh; }
+  .hero-right { min-height:340px; padding:40px 24px; }
+  .styling-grid { grid-template-columns:1fr; }
+  .reviews-grid { grid-template-columns:1fr; }
+  .reviews-header { flex-direction:column; }
+  .footer-top { grid-template-columns:1fr; }
+  .delivery-grid { grid-template-columns:1fr; }
+  .footer-bottom { flex-direction:column; text-align:center; }
+  .cart-drawer { width:100%; }
+  .nl-form { flex-direction:column; }
+  .nl-input { border:1px solid rgba(17,16,9,.18); }
+  .nl-btn { border-top:none; }
+  .product-info-panel { padding:32px 20px; }
+  footer { padding:60px 20px 32px; }
+  .payment-inner { flex-direction:column; }
+  .hero-h1 { font-size:2.6rem; }
+}
+@media(max-width:480px) {
+  .products-grid { grid-template-columns:1fr; }
+  .size-grid { gap:6px; }
+  .fit-grid { flex-direction:column; }
+  .add-row { flex-wrap:wrap; }
+  .fabric-specs { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<!-- ANNOUNCEMENT -->
+<div class="ann">
+  Complimentary worldwide shipping on orders over $150 &nbsp;·&nbsp; New to Clocaire Women? <a href="#">Get 10% off →</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-grid">
+    <div class="nav-left">
+      <a href="#" class="nav-link">The Shirt</a>
+      <a href="#fabric" class="nav-link">Craftsmanship</a>
+      <a href="#sizing" class="nav-link">Size Guide</a>
+      <a href="#styling" class="nav-link">How to Wear</a>
+    </div>
+    <a href="#" class="nav-center">
+      <div class="nav-logo-mark">
+        <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="30" r="27" stroke="#111009" stroke-width="2.5"/>
+          <path d="M22 30 C22 30, 32 14, 42 22 C48 27, 48 33, 50 33 C52 33, 52 27, 58 22 C68 14, 78 30, 78 30 C78 30, 68 46, 58 38 C52 33, 52 27, 50 27 C48 27, 48 33, 42 38 C32 46, 22 30, 22 30Z" fill="#111009"/>
+        </svg>
+      </div>
+      <span class="nav-wordmark">Clocaire</span>
+      <span class="nav-sub">Women</span>
+    </a>
+    <div class="nav-right">
+      <button class="nav-btn" onclick="openSearch()" aria-label="Search">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="nav-btn" aria-label="Account">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+      <button class="nav-btn" onclick="openCart()" aria-label="Cart">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <button class="hamburger" onclick="openMobileNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+  <ul class="mobile-links">
+    <li><a href="#product" onclick="closeMobileNav()">The Shirt</a></li>
+    <li><a href="#fabric" onclick="closeMobileNav()">Craftsmanship</a></li>
+    <li><a href="#sizing" onclick="closeMobileNav()">Size Guide</a></li>
+    <li><a href="#styling" onclick="closeMobileNav()">How to Wear</a></li>
+    <li><a href="#reviews" onclick="closeMobileNav()">Reviews</a></li>
+    <li><a href="#delivery" onclick="closeMobileNav()">Delivery</a></li>
+  </ul>
+  <div class="mobile-logo">
+    <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="30" r="27" stroke="#111009" stroke-width="2.5"/>
+      <path d="M22 30 C22 30, 32 14, 42 22 C48 27, 48 33, 50 33 C52 33, 52 27, 58 22 C68 14, 78 30, 78 30 C78 30, 68 46, 58 38 C52 33, 52 27, 50 27 C48 27, 48 33, 42 38 C32 46, 22 30, 22 30Z" fill="#111009"/>
+    </svg>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-bg-text">Blanc</div>
+    <!-- Shirt SVG illustration -->
+    <div class="hero-shirt-vis">
+      <svg class="shirt-svg-wrap" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Collar -->
+        <path d="M115 40 L150 80 L185 40" stroke="#d4c9b8" stroke-width="1.5" fill="none"/>
+        <!-- Left collar flap -->
+        <path d="M115 40 L90 55 L100 80 L150 80" fill="#f0ebe2" stroke="#ddd5c4" stroke-width="1"/>
+        <!-- Right collar flap -->
+        <path d="M185 40 L210 55 L200 80 L150 80" fill="#f0ebe2" stroke="#ddd5c4" stroke-width="1"/>
+        <!-- Shirt body -->
+        <path d="M90 55 L55 75 L40 160 L40 370 L260 370 L260 160 L245 75 L210 55 L200 80 L100 80 Z" fill="#f8f4ee" stroke="#e0d8cc" stroke-width="1"/>
+        <!-- Left sleeve -->
+        <path d="M90 55 L55 75 L30 130 L50 138 L75 90 L90 80Z" fill="#f5f0e8" stroke="#ddd5c4" stroke-width="1"/>
+        <!-- Right sleeve -->
+        <path d="M210 55 L245 75 L270 130 L250 138 L225 90 L210 80Z" fill="#f5f0e8" stroke="#ddd5c4" stroke-width="1"/>
+        <!-- Button placket -->
+        <line x1="150" y1="82" x2="150" y2="368" stroke="#ddd5c4" stroke-width="1"/>
+        <!-- Buttons -->
+        <circle cx="150" cy="110" r="3.5" fill="none" stroke="#c4bdb0" stroke-width="1"/>
+        <circle cx="150" cy="145" r="3.5" fill="none" stroke="#c4bdb0" stroke-width="1"/>
+        <circle cx="150" cy="180" r="3.5" fill="none" stroke="#c4bdb0" stroke-width="1"/>
+        <circle cx="150" cy="215" r="3.5" fill="none" stroke="#c4bdb0" stroke-width="1"/>
+        <circle cx="150" cy="250" r="3.5" fill="none" stroke="#c4bdb0" stroke-width="1"/>
+        <!-- Breast pocket -->
+        <rect x="85" y="105" width="42" height="36" rx="0" fill="none" stroke="#ddd5c4" stroke-width="1"/>
+        <!-- Logo on pocket -->
+        <circle cx="106" cy="123" r="8" stroke="#c4bdb0" stroke-width=".8" fill="none"/>
+        <path d="M98 123 C98 123, 101 118, 104 120 C105.5 121, 105.5 122.5, 106 122.5 C106.5 122.5, 106.5 121, 108 120 C111 118, 114 123, 114 123 C114 123, 111 128, 108 126 C106.5 125, 106.5 123.5, 106 123.5 C105.5 123.5, 105.5 125, 104 126 C101 128, 98 123, 98 123Z" fill="#c4bdb0"/>
+        <!-- Seam details -->
+        <line x1="40" y1="160" x2="260" y2="160" stroke="#ddd5c4" stroke-width=".5" stroke-dasharray="4,4"/>
+        <!-- Subtle fold shadow -->
+        <path d="M120 370 L120 300 Q118 280 125 260" stroke="#ddd5c4" stroke-width=".5" fill="none"/>
+        <path d="M180 370 L178 310 Q175 285 178 265" stroke="#ddd5c4" stroke-width=".5" fill="none"/>
+      </svg>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">Women · SS 2025</p>
+      <h1 class="hero-h1">The <em>Fitted</em><br>White Shirt</h1>
+      <p class="hero-desc">One garment. Perfected over two years. Cut from 120-thread-count Egyptian cotton, shaped to follow the body with precision, built to last a lifetime.</p>
+      <div class="hero-ctas">
+        <a href="#product" class="btn-dark">Shop the Shirt</a>
+        <a href="#fabric" class="btn-ghost">Discover the Craft</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-right-inner">
+      <div class="hero-logo-large">
+        <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="60" r="54" stroke="white" stroke-width="3"/>
+          <path d="M44 60 C44 60, 64 28, 84 44 C96 54, 96 66, 100 66 C104 66, 104 54, 116 44 C136 28, 156 60, 156 60 C156 60, 136 92, 116 76 C104 66, 104 54, 100 54 C96 54, 96 66, 84 76 C64 92, 44 60, 44 60Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="hero-price-wrap">
+        <div class="hero-price">$285</div>
+        <div class="hero-price-note">Free shipping · Free returns</div>
+      </div>
+      <button class="btn-rose hero-quick-buy" onclick="scrollToProduct()">Add to Bag — $285</button>
+      <div style="margin-top:20px;font-family:var(--mono);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(250,247,242,.3);">6 sizes available · 3 fits</div>
+    </div>
+    <div class="hero-scroll-line"><span>Scroll</span></div>
+  </div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <div class="marquee-item">The Fitted White Shirt<span class="marquee-sep"></span>120-thread Egyptian Cotton<span class="marquee-sep"></span>Made in Portugal<span class="marquee-sep"></span>Free Worldwide Shipping<span class="marquee-sep"></span>30-Day Returns<span class="marquee-sep"></span>Clocaire Women<span class="marquee-sep"></span>SS 2025<span class="marquee-sep"></span></div>
+    <div class="marquee-item">The Fitted White Shirt<span class="marquee-sep"></span>120-thread Egyptian Cotton<span class="marquee-sep"></span>Made in Portugal<span class="marquee-sep"></span>Free Worldwide Shipping<span class="marquee-sep"></span>30-Day Returns<span class="marquee-sep"></span>Clocaire Women<span class="marquee-sep"></span>SS 2025<span class="marquee-sep"></span></div>
+  </div>
+</div>
+
+<!-- PRODUCT DETAIL -->
+<div id="product" class="product-layout">
+  <!-- GALLERY -->
+  <div class="product-gallery">
+    <div class="gallery-main">
+      <div class="gallery-thumbnails">
+        <div class="thumb active" onclick="setThumb(this,0)"><div class="thumb-inner">Front</div></div>
+        <div class="thumb" onclick="setThumb(this,1)"><div class="thumb-inner">Back</div></div>
+        <div class="thumb" onclick="setThumb(this,2)"><div class="thumb-inner">Detail</div></div>
+        <div class="thumb" onclick="setThumb(this,3)"><div class="thumb-inner">Flat</div></div>
+      </div>
+      <!-- Shirt illustration (large) -->
+      <div class="shirt-main-vis" id="galleryMain">
+        <svg viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M115 40 L150 80 L185 40" stroke="#c8c0b0" stroke-width="1.5" fill="none"/>
+          <path d="M115 40 L90 55 L100 80 L150 80" fill="#eee8de" stroke="#d8d0c0" stroke-width="1"/>
+          <path d="M185 40 L210 55 L200 80 L150 80" fill="#eee8de" stroke="#d8d0c0" stroke-width="1"/>
+          <path d="M90 55 L55 75 L40 160 L40 370 L260 370 L260 160 L245 75 L210 55 L200 80 L100 80 Z" fill="#f5f0e8" stroke="#d8d0c0" stroke-width="1"/>
+          <path d="M90 55 L55 75 L30 130 L50 138 L75 90 L90 80Z" fill="#f0ebe0" stroke="#d8d0c0" stroke-width="1"/>
+          <path d="M210 55 L245 75 L270 130 L250 138 L225 90 L210 80Z" fill="#f0ebe0" stroke="#d8d0c0" stroke-width="1"/>
+          <line x1="150" y1="82" x2="150" y2="368" stroke="#d0c8b8" stroke-width=".8"/>
+          <circle cx="150" cy="108" r="4" fill="none" stroke="#b8b0a0" stroke-width="1.2"/>
+          <circle cx="150" cy="143" r="4" fill="none" stroke="#b8b0a0" stroke-width="1.2"/>
+          <circle cx="150" cy="178" r="4" fill="none" stroke="#b8b0a0" stroke-width="1.2"/>
+          <circle cx="150" cy="213" r="4" fill="none" stroke="#b8b0a0" stroke-width="1.2"/>
+          <circle cx="150" cy="248" r="4" fill="none" stroke="#b8b0a0" stroke-width="1.2"/>
+          <rect x="83" y="103" width="44" height="38" fill="none" stroke="#d0c8b8" stroke-width=".8"/>
+          <circle cx="105" cy="122" r="9" stroke="#b8b0a0" stroke-width=".8" fill="none"/>
+          <path d="M96 122 C96 122, 99.5 116.5, 103 118.5 C104.5 119.5, 104.5 121, 105 121 C105.5 121, 105.5 119.5, 107 118.5 C110.5 116.5, 114 122, 114 122 C114 122, 110.5 127.5, 107 125.5 C105.5 124.5, 105.5 123, 105 123 C104.5 123, 104.5 124.5, 103 125.5 C99.5 127.5, 96 122, 96 122Z" fill="#b8b0a0"/>
+          <path d="M120 370 L120 300 Q117 278 124 255" stroke="#d0c8b8" stroke-width=".5" fill="none"/>
+          <path d="M180 370 L178 310 Q176 282 179 260" stroke="#d0c8b8" stroke-width=".5" fill="none"/>
+          <path d="M40 200 Q35 210 40 220" stroke="#d0c8b8" stroke-width=".5" fill="none"/>
+          <path d="M260 200 Q265 210 260 220" stroke="#d0c8b8" stroke-width=".5" fill="none"/>
+        </svg>
+      </div>
+      <div class="gallery-watermark">
+        <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="30" r="27" stroke="#111009" stroke-width="2"/>
+          <path d="M22 30 C22 30, 32 14, 42 22 C48 27, 48 33, 50 33 C52 33, 52 27, 58 22 C68 14, 78 30, 78 30 C78 30, 68 46, 58 38 C52 33, 52 27, 50 27 C48 27, 48 33, 42 38 C32 46, 22 30, 22 30Z" fill="#111009"/>
+        </svg>
+      </div>
+      <span class="gallery-view-label">The Fitted White Shirt</span>
+    </div>
+  </div>
+
+  <!-- PRODUCT INFO -->
+  <div class="product-info-panel">
+    <p class="prod-eyebrow">Clocaire Women · SS 2025</p>
+    <h2 class="prod-title">The <em>Fitted</em><br>White Shirt</h2>
+    <p class="prod-subtitle">120-thread Egyptian Cotton · Made in Portugal</p>
+    <div class="stars">
+      <span class="star-row">★ ★ ★ ★ ★</span>
+      <span class="star-sep"></span>
+      <span class="star-count">4.9</span>
+      <span class="star-sep"></span>
+      <a href="#reviews" class="star-link">47 reviews</a>
+    </div>
+    <div class="prod-price-row">
+      <span class="prod-price">$285</span>
+      <span class="prod-price-note">Free global shipping</span>
+    </div>
+
+    <!-- FIT -->
+    <div class="field-label">Select Fit</div>
+    <div class="fit-grid" id="fitGrid">
+      <button class="fit-btn active" onclick="selectFit(this)">Classic<span class="fit-sub">Relaxed through body</span></button>
+      <button class="fit-btn" onclick="selectFit(this)">Tailored<span class="fit-sub">Close to body</span></button>
+      <button class="fit-btn" onclick="selectFit(this)">Oversized<span class="fit-sub">Boxy, dropped shoulder</span></button>
+    </div>
+
+    <!-- SIZE -->
+    <div class="field-label">Select Size <a href="#sizing" class="size-link">Size Guide</a></div>
+    <div class="size-grid">
+      <button class="size-btn sold-out">XS</button>
+      <button class="size-btn" onclick="selectSize(this)">S</button>
+      <button class="size-btn active" onclick="selectSize(this)">M</button>
+      <button class="size-btn" onclick="selectSize(this)">L</button>
+      <button class="size-btn" onclick="selectSize(this)">XL</button>
+      <button class="size-btn" onclick="selectSize(this)">XXL</button>
+    </div>
+
+    <!-- QTY + ADD -->
+    <div class="add-row">
+      <div class="qty-wrap">
+        <button class="qty-btn" onclick="changeQty(-1)">−</button>
+        <span class="qty-num" id="qtyNum">1</span>
+        <button class="qty-btn" onclick="changeQty(1)">+</button>
+      </div>
+      <button class="btn-add" onclick="addToCart()">Add to Bag</button>
+      <button class="btn-wish" id="wishBtn" onclick="toggleWish()" aria-label="Wishlist">♡</button>
+    </div>
+    <button class="buy-now" onclick="buyNow()">Buy Now</button>
+
+    <!-- TRUST -->
+    <div class="prod-trust">
+      <div class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Secure Checkout
+      </div>
+      <div class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+        Free Returns
+      </div>
+      <div class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16,8 20,8 23,11 23,16 16,16 16,8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        Ships in 48hrs
+      </div>
+      <div class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23,6 13.5,15.5 8.5,10.5 1,18"/><polyline points="17,6 23,6 23,12"/></svg>
+        30-Day Returns
+      </div>
+    </div>
+
+    <!-- SHARE -->
+    <div class="prod-share">
+      <span class="share-label">Share</span>
+      <a href="#" class="share-btn" title="Instagram">◈</a>
+      <a href="#" class="share-btn" title="Pinterest">◉</a>
+      <a href="#" class="share-btn" title="Facebook">◻</a>
+      <a href="#" class="share-btn" title="Copy Link">⊙</a>
+    </div>
+
+    <!-- ACCORDION -->
+    <div class="accordion" style="margin-top:28px;">
+      <div class="accordion-item">
+        <button class="accordion-trigger" onclick="toggleAcc(this)">
+          Product Details <span class="acc-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <ul>
+              <li>100% Egyptian cotton, 120-thread count</li>
+              <li>Semi-fitted silhouette with princess seaming</li>
+              <li>French front placket with mother-of-pearl buttons</li>
+              <li>Single chest pocket with Clocaire logo emblem</li>
+              <li>Spread collar with removable collar stays</li>
+              <li>Single-button barrel cuffs</li>
+              <li>Available in Classic, Tailored, and Oversized fits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" onclick="toggleAcc(this)">
+          Care Instructions <span class="acc-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <ul>
+              <li>Machine wash cold on delicate cycle</li>
+              <li>Use gentle detergent — avoid bleach</li>
+              <li>Tumble dry low or lay flat to dry</li>
+              <li>Iron on medium heat (cotton setting)</li>
+              <li>Dry clean recommended for best results</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" onclick="toggleAcc(this)">
+          Sustainability <span class="acc-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p>Our Egyptian cotton is sourced from certified organic farms in the Nile Delta. The fabric is processed without harmful chemicals and woven in a solar-powered facility. Every Clocaire shirt is produced in a family atelier in Porto, Portugal, ensuring fair wages and zero-waste pattern cutting. The packaging is 100% compostable.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" onclick="toggleAcc(this)">
+          Shipping & Returns <span class="acc-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <ul>
+              <li>Free standard shipping on all orders over $150</li>
+              <li>Standard: 3–5 business days (US), 5–8 days (International)</li>
+              <li>Express: 1–2 business days available at checkout</li>
+              <li>Free returns within 30 days of delivery</li>
+              <li>Items must be unworn, unwashed, with tags attached</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FABRIC / CRAFT -->
+<div class="fabric-section" id="fabric">
+  <div class="fabric-inner">
+    <div class="fabric-vis reveal">
+      <div class="fabric-box">
+        <div class="fabric-logo-ghost">
+          <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="60" r="54" stroke="white" stroke-width="2.5"/>
+            <path d="M44 60 C44 60, 64 28, 84 44 C96 54, 96 66, 100 66 C104 66, 104 54, 116 44 C136 28, 156 60, 156 60 C156 60, 136 92, 116 76 C104 66, 104 54, 100 54 C96 54, 96 66, 84 76 C64 92, 44 60, 44 60Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="fabric-shirt-ghost">
+          <svg viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M115 40 L150 80 L185 40" stroke="white" stroke-width="1.5" fill="none"/>
+            <path d="M115 40 L90 55 L100 80 L150 80" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+            <path d="M185 40 L210 55 L200 80 L150 80" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+            <path d="M90 55 L55 75 L40 160 L40 370 L260 370 L260 160 L245 75 L210 55 L200 80 L100 80 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <path d="M90 55 L55 75 L30 130 L50 138 L75 90 L90 80Z" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <path d="M210 55 L245 75 L270 130 L250 138 L225 90 L210 80Z" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <line x1="150" y1="82" x2="150" y2="368" stroke="rgba(255,255,255,0.2)" stroke-width=".8"/>
+          </svg>
+        </div>
+        <div class="fabric-tag">
+          <span class="fabric-tag-num">120</span>
+          Thread Count
+        </div>
+      </div>
+    </div>
+    <div class="fabric-content reveal reveal-d1">
+      <p class="fabric-eyebrow">The Craft</p>
+      <h2 class="fabric-title">Woven from<br><em>the finest</em><br>Egyptian cotton</h2>
+      <p class="fabric-text">We spent two years searching for the perfect white shirt. The answer was in the Nile Delta — a 120-thread-count cotton so fine it breathes like a second skin. Each shirt is cut in a single pattern session to preserve the weave's natural grain, then assembled by Portuguese artisans trained in the French couture tradition.</p>
+      <div class="fabric-specs">
+        <div class="spec-item">
+          <div class="spec-label">Fabric</div>
+          <div class="spec-val">100% Egyptian Cotton</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Thread Count</div>
+          <div class="spec-val">120 TC Poplin</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Origin</div>
+          <div class="spec-val">Crafted in Porto, Portugal</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Buttons</div>
+          <div class="spec-val">Mother-of-Pearl</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Dyeing</div>
+          <div class="spec-val">Optical white, zero-chemical</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Production</div>
+          <div class="spec-val">Limited run, 400 units</div>
+        </div>
+      </div>
+      <a href="#product" class="btn-rose">Shop the Shirt — $285</a>
+    </div>
+  </div>
+</div>
+
+<!-- SIZE GUIDE -->
+<section class="size-guide-section" id="sizing">
+  <div class="section-max">
+    <p class="label reveal">Fit & Sizing</p>
+    <h2 class="h2 reveal reveal-d1">Find your <em>perfect</em> fit</h2>
+    <p style="font-family:var(--sans);font-size:.88rem;color:var(--gray);margin-top:14px;line-height:1.8;max-width:540px;" class="reveal reveal-d2">All measurements are in inches. The Fitted White Shirt has a slightly longer hem and a narrower sleeve than standard. When in doubt, size up for the Classic or Oversized fit.</p>
+    <div class="size-table-wrap reveal reveal-d3">
+      <table>
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Chest (in)</th>
+            <th>Waist (in)</th>
+            <th>Hip (in)</th>
+            <th>Sleeve Length</th>
+            <th>Total Length</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>XS</td><td>32 – 33</td><td>24 – 25</td><td>34 – 35</td><td>23"</td><td>27"</td></tr>
+          <tr><td>S</td><td>34 – 35</td><td>26 – 27</td><td>36 – 37</td><td>23.5"</td><td>27.5"</td></tr>
+          <tr><td>M</td><td>36 – 37</td><td>28 – 29</td><td>38 – 39</td><td>24"</td><td>28"</td></tr>
+          <tr><td>L</td><td>38 – 40</td><td>30 – 32</td><td>40 – 42</td><td>24.5"</td><td>28.5"</td></tr>
+          <tr><td>XL</td><td>41 – 43</td><td>33 – 35</td><td>43 – 45</td><td>25"</td><td>29"</td></tr>
+          <tr><td>XXL</td><td>44 – 46</td><td>36 – 38</td><td>46 – 48</td><td>25.5"</td><td>29.5"</td></tr>
+        </tbody>
+      </table>
+      <p class="size-note">Model is 5'9" and wears a size S in the Tailored fit. XS is currently sold out. For personalised sizing advice, contact our styling team at <strong>style@clocaire.com</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO WEAR -->
+<section class="styling-section" id="styling">
+  <div class="section-max">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;">
+      <div>
+        <p class="label reveal">Three Ways to Wear It</p>
+        <h2 class="h2 reveal reveal-d1">Style the <em>shirt</em></h2>
+      </div>
+      <a href="#product" class="btn-ghost reveal reveal-d2">Shop Now</a>
+    </div>
+    <div class="styling-grid" style="margin-top:48px;">
+      <div class="style-card s1 reveal">
+        <div class="style-img">
+          <span class="style-shirt-icon">C</span>
+          <div class="style-overlay"><span class="style-cta">Shop This Look</span></div>
+        </div>
+        <div class="style-label">
+          <p class="style-look">Look 01</p>
+          <h3 class="style-name">The Power Tuck</h3>
+          <p class="style-desc">Tucked into high-waist tailored trousers. Collar open, cuffs rolled. Effortless authority.</p>
+        </div>
+      </div>
+      <div class="style-card s2 reveal reveal-d1">
+        <div class="style-img">
+          <span class="style-shirt-icon" style="color:white;">C</span>
+          <div class="style-overlay"><span class="style-cta">Shop This Look</span></div>
+        </div>
+        <div class="style-label">
+          <p class="style-look">Look 02</p>
+          <h3 class="style-name">The Evening Untuck</h3>
+          <p class="style-desc">Worn loose over wide silk trousers. Asymmetric tuck at front. Elevated and fluid.</p>
+        </div>
+      </div>
+      <div class="style-card s3 reveal reveal-d2">
+        <div class="style-img">
+          <span class="style-shirt-icon">C</span>
+          <div class="style-overlay"><span class="style-cta">Shop This Look</span></div>
+        </div>
+        <div class="style-label">
+          <p class="style-look">Look 03</p>
+          <h3 class="style-name">The Minimal Edit</h3>
+          <p class="style-desc">Layered beneath a structured coat. Top button fastened, clean and architectural.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="section-max">
+    <div class="reviews-header">
+      <div>
+        <p class="label reveal">Client Reviews</p>
+        <h2 class="h2 reveal reveal-d1">What she <em>said</em></h2>
+      </div>
+      <div class="reviews-score reveal reveal-d2">
+        <div class="score-num">4.9</div>
+        <div class="score-stars">★ ★ ★ ★ ★</div>
+        <div class="score-total">Based on 47 reviews</div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★ ★ ★ ★ ★</div>
+        <p class="review-text">"I have tried every white shirt on the market. This is the first one that actually fits without gaping at the chest. The cotton is extraordinary — it barely wrinkles."</p>
+        <div class="review-author"><span>Amélie D., Paris<br><span class="review-date">April 2025</span></span><span class="review-verified">✓ Verified Purchase</span></div>
+      </div>
+      <div class="review-card reveal reveal-d1">
+        <div class="review-stars">★ ★ ★ ★ ★</div>
+        <p class="review-text">"I ordered the Tailored fit in a medium. It is precision cut — the kind of shirt you wear to every important meeting. I bought two."</p>
+        <div class="review-author"><span>Naomi K., London<br><span class="review-date">March 2025</span></span><span class="review-verified">✓ Verified Purchase</span></div>
+      </div>
+      <div class="review-card reveal reveal-d2">
+        <div class="review-stars">★ ★ ★ ★ ★</div>
+        <p class="review-text">"The mother-of-pearl buttons alone justify the price. Everything about this shirt communicates quality. It has become my uniform."</p>
+        <div class="review-author"><span>Lena S., New York<br><span class="review-date">May 2025</span></span><span class="review-verified">✓ Verified Purchase</span></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★ ★ ★ ★ ☆</div>
+        <p class="review-text">"Genuinely the softest shirt I own. Runs slightly long in the body — ideal for tucking. Delivery was swift and the packaging is beautiful."</p>
+        <div class="review-author"><span>Priya M., Dubai<br><span class="review-date">April 2025</span></span><span class="review-verified">✓ Verified Purchase</span></div>
+      </div>
+      <div class="review-card reveal reveal-d1">
+        <div class="review-stars">★ ★ ★ ★ ★</div>
+        <p class="review-text">"Worth every penny. I've worn it to a board meeting, a dinner party, and a weekend farmers market. It works for everything."</p>
+        <div class="review-author"><span>Claire R., Sydney<br><span class="review-date">February 2025</span></span><span class="review-verified">✓ Verified Purchase</span></div>
+      </div>
+      <div class="review-card reveal reveal-d2">
+        <div class="review-stars">★ ★ ★ ★ ★</div>
+        <p class="review-text">"The Oversized fit is incredible. I wear it as a dress with a belt. The fabric doesn't crease, doesn't pill, and stays impossibly white."</p>
+        <div class="review-author"><span>Sofia B., Milan<br><span class="review-date">May 2025</span></span><span class="review-verified">✓ Verified Purchase</span></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <button class="btn-ghost" onclick="showToast('All 47 reviews loaded')">Read All 47 Reviews</button>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="delivery-section" id="delivery">
+  <div class="section-max">
+    <p class="label reveal">Shipping & Delivery</p>
+    <h2 class="h2 reveal reveal-d1">Delivered to your <em>door</em></h2>
+    <div class="delivery-grid">
+      <div class="delivery-item reveal">
+        <span class="d-icon">◎</span>
+        <h3 class="d-title">Standard Shipping</h3>
+        <p class="d-text">Free on orders over $150. 3–5 business days within the US. 5–8 days internationally. Tracked from dispatch to door.</p>
+      </div>
+      <div class="delivery-item reveal reveal-d1">
+        <span class="d-icon">◈</span>
+        <h3 class="d-title">Express Delivery</h3>
+        <p class="d-text">Receive in 1–2 business days. $18 within the US, $28 internationally. Order before 12pm EST for same-day dispatch.</p>
+      </div>
+      <div class="delivery-item reveal reveal-d2">
+        <span class="d-icon">◉</span>
+        <h3 class="d-title">Free Returns</h3>
+        <p class="d-text">Return within 30 days, no questions asked. Items must be unworn with original tags. Prepaid return label in every order.</p>
+      </div>
+      <div class="delivery-item reveal reveal-d3">
+        <span class="d-icon">⬡</span>
+        <h3 class="d-title">Gift Packaging</h3>
+        <p class="d-text">Every Clocaire order arrives in our signature ivory box with ribbon and a handwritten note card. Gift-ready by default.</p>
+      </div>
+    </div>
+    <div class="delivery-countries reveal">
+      <p><strong>We ship to 62 countries</strong> including the US, UK, France, Germany, Italy, Australia, Japan, UAE, Singapore, Canada, and all of Europe. Duties and taxes are calculated at checkout. For countries not listed, please contact us at <strong>shipping@clocaire.com</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- PAYMENT / SECURITY -->
+<div class="payment-section">
+  <div class="payment-inner">
+    <div class="payment-left reveal">
+      <h3>Secure & <em>trusted</em></h3>
+      <p>All transactions are protected with 256-bit SSL encryption. We never store your card details. Checkout is powered by Stripe — trusted by millions of businesses worldwide.</p>
+      <div class="security-badges" style="margin-top:20px;">
+        <div class="sec-badge"><span class="sec-dot"></span>256-bit SSL</div>
+        <div class="sec-badge"><span class="sec-dot"></span>PCI DSS Compliant</div>
+        <div class="sec-badge"><span class="sec-dot"></span>3D Secure</div>
+        <div class="sec-badge"><span class="sec-dot"></span>GDPR</div>
+      </div>
+    </div>
+    <div class="reveal reveal-d2">
+      <div style="font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(250,247,242,.35);margin-bottom:14px;">Accepted payments</div>
+      <div class="payment-logos">
+        <span class="pay-badge highlight">VISA</span>
+        <span class="pay-badge highlight">MASTERCARD</span>
+        <span class="pay-badge highlight">AMEX</span>
+        <span class="pay-badge">PAYPAL</span>
+        <span class="pay-badge">⌘ APPLE PAY</span>
+        <span class="pay-badge">G PAY</span>
+        <span class="pay-badge">SHOP PAY</span>
+        <span class="pay-badge">KLARNA</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="newsletter-inner">
+    <div class="nl-logo">
+      <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="60" r="54" stroke="#111009" stroke-width="2.5"/>
+        <path d="M44 60 C44 60, 64 28, 84 44 C96 54, 96 66, 100 66 C104 66, 104 54, 116 44 C136 28, 156 60, 156 60 C156 60, 136 92, 116 76 C104 66, 104 54, 100 54 C96 54, 96 66, 84 76 C64 92, 44 60, 44 60Z" fill="#111009"/>
+      </svg>
+    </div>
+    <h2 class="nl-title reveal">Join the <em>Clocaire</em> circle</h2>
+    <p class="nl-text reveal reveal-d1">Be the first to know about new pieces, private sales, and styling notes from our atelier. Members receive 10% off their first order.</p>
+    <div class="nl-form reveal reveal-d2">
+      <input type="email" class="nl-input" placeholder="Your email address" id="nlEmail">
+      <button class="nl-btn" onclick="subscribe()">Join</button>
+    </div>
+    <p class="nl-note reveal reveal-d3">🔒 &nbsp;Privacy protected · Unsubscribe anytime</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-top">
+      <div>
+        <div class="ft-brand-logo">
+          <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="30" r="27" stroke="white" stroke-width="2.2"/>
+            <path d="M22 30 C22 30, 32 14, 42 22 C48 27, 48 33, 50 33 C52 33, 52 27, 58 22 C68 14, 78 30, 78 30 C78 30, 68 46, 58 38 C52 33, 52 27, 50 27 C48 27, 48 33, 42 38 C32 46, 22 30, 22 30Z" fill="white"/>
+          </svg>
+          <span class="ft-brand-name">Clocaire</span>
+        </div>
+        <p class="ft-tagline">Clocaire Women. One perfect shirt, crafted for the infinite woman. Made in Portugal. Worn everywhere.</p>
+        <div class="ft-socials">
+          <a href="#" class="ft-social">◈</a>
+          <a href="#" class="ft-social">◉</a>
+          <a href="#" class="ft-social">◻</a>
+          <a href="#" class="ft-social">◆</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="ft-col-title">The Shirt</h4>
+        <ul class="ft-links">
+          <li><a href="#product">Shop Now</a></li>
+          <li><a href="#fabric">Craftsmanship</a></li>
+          <li><a href="#sizing">Size Guide</a></li>
+          <li><a href="#styling">How to Wear</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="ft-col-title">Support</h4>
+        <ul class="ft-links">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#delivery">Shipping & Delivery</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">Care Guide</a></li>
+          <li><a href="#">Personal Styling</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="ft-col-title">Contact</h4>
+        <div class="ft-contact-item"><strong>Email</strong>hello@clocaire.com</div>
+        <div class="ft-contact-item"><strong>Styling</strong>style@clocaire.com</div>
+        <div class="ft-contact-item"><strong>Hours</strong>Mon–Fri: 9AM–6PM EST</div>
+        <div class="ft-contact-item"><strong>Atelier</strong>Porto, Portugal</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="ft-copy">© 2025 Clocaire Women. All rights reserved.</p>
+      <div class="ft-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+        <a href="#">Accessibility</a>
+      </div>
+      <div class="ft-pays">
+        <span class="ft-pay">VISA</span>
+        <span class="ft-pay">MC</span>
+        <span class="ft-pay">AMEX</span>
+        <span class="ft-pay">PAYPAL</span>
+        <span class="ft-pay">⌘ PAY</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cdh">
+    <h2 class="cdh-title">Your Bag</h2>
+    <button class="cdh-close" onclick="closeCart()">✕</button>
+  </div>
+  <div class="cd-body" id="cdBody"></div>
+  <div class="cd-footer" id="cdFooter" style="display:none;">
+    <div class="cd-total"><span>Total</span><span id="cdTotal">$0</span></div>
+    <button class="cd-checkout" onclick="checkout()">Proceed to Checkout</button>
+    <div class="cd-secure">🔒 &nbsp;Secure checkout · Free returns</div>
+  </div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-over" id="searchOver">
+  <button class="search-over-close" onclick="closeSearch()">✕</button>
+  <div class="search-box">
+    <span class="search-hint">Search Clocaire Women</span>
+    <input type="text" class="search-field" placeholder="The Fitted White Shirt…" id="searchField">
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <span class="toast-icon">✓</span>
+  <span id="toastMsg">Added to bag</span>
+</div>
+
+<script>
+/* ─── STATE ─── */
+let cart = [];
+let qty = 1;
+let selectedSize = 'M';
+let selectedFit = 'Classic';
+let wishActive = false;
+
+/* ─── CURSOR ─── */
+const cur = document.getElementById('cur');
+const curR = document.getElementById('cur-ring');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+function animCursor() {
+  rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+  cur.style.cssText = `left:${mx}px;top:${my}px;`;
+  curR.style.cssText = `left:${rx}px;top:${ry}px;`;
+  requestAnimationFrame(animCursor);
+}
+animCursor();
+document.querySelectorAll('a,button,[onclick],.style-card,.thumb,.review-card').forEach(el => {
+  el.addEventListener('mouseenter', () => { cur.classList.add('h'); curR.classList.add('h'); });
+  el.addEventListener('mouseleave', () => { cur.classList.remove('h'); curR.classList.remove('h'); });
+});
+
+/* ─── SCROLL ─── */
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', scrollY > 10);
+});
+
+/* ─── REVEAL ─── */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+/* ─── ACCORDION ─── */
+function toggleAcc(btn) {
+  const item = btn.parentElement;
+  const body = item.querySelector('.accordion-body');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.accordion-item.open').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.accordion-body').classList.remove('open');
+  });
+  if (!isOpen) { item.classList.add('open'); body.classList.add('open'); }
+}
+
+/* ─── SIZE / FIT ─── */
+function selectSize(btn) {
+  if (btn.classList.contains('sold-out')) return;
+  document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  selectedSize = btn.textContent;
+}
+function selectFit(btn) {
+  document.querySelectorAll('.fit-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  selectedFit = btn.childNodes[0].textContent.trim();
+}
+
+/* ─── QTY ─── */
+function changeQty(d) {
+  qty = Math.max(1, Math.min(10, qty + d));
+  document.getElementById('qtyNum').textContent = qty;
+}
+
+/* ─── WISHLIST ─── */
+function toggleWish() {
+  wishActive = !wishActive;
+  const btn = document.getElementById('wishBtn');
+  btn.textContent = wishActive ? '♥' : '♡';
+  btn.classList.toggle('active', wishActive);
+  showToast(wishActive ? 'Saved to wishlist' : 'Removed from wishlist');
+}
+
+/* ─── CART ─── */
+function addToCart() {
+  const existing = cart.find(i => i.size === selectedSize && i.fit === selectedFit);
+  if (existing) { existing.qty += qty; }
+  else { cart.push({ id: Date.now(), name: 'The Fitted White Shirt', size: selectedSize, fit: selectedFit, price: 285, qty }); }
+  renderCart();
+  openCart();
+  showToast(`Added to bag — Size ${selectedSize} · ${selectedFit}`);
+}
+
+function buyNow() {
+  addToCart();
+  showToast('Redirecting to secure checkout…');
+}
+
+function scrollToProduct() {
+  document.getElementById('product').scrollIntoView({ behavior: 'smooth' });
+}
+
+function renderCart() {
+  const body = document.getElementById('cdBody');
+  const footer = document.getElementById('cdFooter');
+  const badge = document.getElementById('cartBadge');
+  if (!cart.length) {
+    body.innerHTML = `<div class="cd-empty"><p>Your bag is empty</p><button class="btn-dark" onclick="closeCart();scrollToProduct();">Shop the Shirt</button></div>`;
+    footer.style.display = 'none';
+    badge.textContent = '0';
+    return;
+  }
+  let total = 0;
+  body.innerHTML = cart.map(item => {
+    total += item.price * item.qty;
+    return `<div class="cd-item">
+      <div class="cd-item-img">FWS</div>
+      <div>
+        <div class="cd-item-name">${item.name}</div>
+        <div class="cd-item-variant">Size ${item.size} · ${item.fit} Fit</div>
+        <div class="cd-qty-row">
+          <div class="cd-qty">
+            <button class="cdq-btn" onclick="cdChangeQty(${item.id},-1)">−</button>
+            <span class="cdq-num">${item.qty}</span>
+            <button class="cdq-btn" onclick="cdChangeQty(${item.id},1)">+</button>
+          </div>
+          <span class="cd-price">$${(item.price * item.qty).toLocaleString()}</span>
+        </div>
+        <button class="cd-remove" onclick="cdRemove(${item.id})">Remove</button>
+      </div>
+    </div>`;
+  }).join('');
+  document.getElementById('cdTotal').textContent = '$' + total.toLocaleString();
+  footer.style.display = 'block';
+  badge.textContent = cart.reduce((s, i) => s + i.qty, 0);
+}
+
+function cdChangeQty(id, d) {
+  const item = cart.find(i => i.id === id);
+  if (!item) return;
+  item.qty += d;
+  if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+  renderCart();
+}
+function cdRemove(id) { cart = cart.filter(i => i.id !== id); renderCart(); }
+function openCart() { document.getElementById('overlay').classList.add('open'); document.getElementById('cartDrawer').classList.add('open'); renderCart(); }
+function closeCart() { document.getElementById('overlay').classList.remove('open'); document.getElementById('cartDrawer').classList.remove('open'); }
+function checkout() { showToast('Redirecting to secure checkout…'); setTimeout(closeCart, 1500); }
+
+/* ─── SEARCH ─── */
+function openSearch() { document.getElementById('searchOver').classList.add('open'); setTimeout(() => document.getElementById('searchField').focus(), 300); }
+function closeSearch() { document.getElementById('searchOver').classList.remove('open'); }
+
+/* ─── MOBILE NAV ─── */
+function openMobileNav() { document.getElementById('mobileNav').classList.add('open'); }
+function closeMobileNav() { document.getElementById('mobileNav').classList.remove('open'); }
+
+/* ─── GALLERY THUMBS ─── */
+function setThumb(el, idx) {
+  document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  showToast(['Front view', 'Back view', 'Detail view', 'Flat lay'][idx]);
+}
+
+/* ─── NEWSLETTER ─── */
+function subscribe() {
+  const email = document.getElementById('nlEmail').value;
+  if (!email || !email.includes('@')) { showToast('Please enter a valid email address'); return; }
+  showToast('Welcome to Clocaire. 10% off on its way to your inbox ✓');
+  document.getElementById('nlEmail').value = '';
+}
+
+/* ─── TOAST ─── */
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  document.getElementById('toastMsg').textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._to);
+  t._to = setTimeout(() => t.classList.remove('show'), 3200);
+}
+
+/* ─── ESC KEY ─── */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeCart(); closeSearch(); closeMobileNav(); }
+});
+
+/* ─── INIT ─── */
+renderCart();
+</script>
+</body>
+</html>
